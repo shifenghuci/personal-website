@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Base styling to center the element for demonstration */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .eye-container {
+        /* Establishes the coordinate system for pupil movement */
+        position: relative; 
+        width: 200px;
+        height: 200px;
+        }
+
+        .eye {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border: 2px solid #333;
+        border-radius: 50%;
+        
+        /* Center the eye in its container */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .pupil {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+        
+        /* Initial center position within the eye */
+        top: 50%;
+        left: 50%;
+        
+        /* This ensures the pupil starts perfectly centered */
+        transform: translate(-50%, -50%); 
+        transition: transform 0.1s linear; /* Smooths the movement */
+        }
+</style>
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const eye = document.querySelector('.eye');
+        const pupil = document.querySelector('.pupil');
+
+        // Define the maximum distance the pupil can move from the center
+        // (Eye radius - Pupil radius / 2 - some buffer)
+        const pupilMaxDistance = 30; 
+
+        // Function to handle the eye movement
+        const followMouse = (e) => {
+            // 1. Get the center coordinates of the main eye element
+            const eyeRect = eye.getBoundingClientRect();
+            const eyeCenterX = eyeRect.left + eyeRect.width / 2;
+            const eyeCenterY = eyeRect.top + eyeRect.height / 2;
+
+            // 2. Get the mouse coordinates
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            // 3. Calculate the difference (delta)
+            const deltaX = mouseX - eyeCenterX;
+            const deltaY = mouseY - eyeCenterY;
+
+            // 4. Calculate the angle (in radians) using arctan2
+            // atan2 is better than atan because it handles all four quadrants correctly.
+            const angleRad = Math.atan2(deltaY, deltaX);
+
+            // 5. Calculate the distance to move the pupil (always the max distance)
+            const pupilX = pupilMaxDistance * Math.cos(angleRad);
+            const pupilY = pupilMaxDistance * Math.sin(angleRad);
+
+            // 6. Apply the transformation
+            // We maintain the initial centering translation (-50%, -50%) 
+            // and add the calculated movement (pupilX, pupilY).
+            pupil.style.transform = `translate(
+            calc(-50% + ${pupilX}px), 
+            calc(-50% + ${pupilY}px)
+            )`;
+        };
+
+        // Attach the function to the mousemove event on the entire document
+        document.addEventListener('mousemove', followMouse);
+        });
+</script>
+<body>
+    <div class="eye-container">
+        <div class="eye">
+            <div class="pupil"></div>
+        </div>
+    </div>
+</body>
+</html>
+
