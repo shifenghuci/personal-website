@@ -35,7 +35,7 @@
         <!--Logo and Navigation Bar-->
         <header>
             <nav id="head-navbar" class="navbar glass-effect">
-                <a class="ps-2 nav-brand" style="text-decoration: none; color: silver; font-size: 25px" href="#">Shifeng Hong</a>
+                <a id="name" class="ps-2 nav-brand" style="text-decoration: none; color: silver; font-size: 25px" href="#">Shifeng Hong</a>
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="#About-Me" class="nav-link">#About</a></li>
                     <li class="nav-item"><a href="#Education-Background" class="nav-link">#Education</a></li>
@@ -56,7 +56,7 @@
             </div>
 
 
-            <section id="About-Me" class="p-2 my-3 container card glass-effect">
+            <section id="About-Me" class="p-5 my-3 container card glass-effect">
                 <h2 class="card-title">About Me</h2>
                 <div class="card-body">
                     <p>I was born in Guangzhou, China. It belongs to a greater area known as "Canton" (“粤” in chinese). I completed my high school and undergrad education in California.</p>
@@ -95,7 +95,7 @@
                     <img id="selfie" class= "shadow-sm object" src="vase.png" alt="">
             </div> -->
 
-            <section id="Education-Background" class="p-2 my-3 container card glass-effect">
+            <section id="Education-Background" class="p-5 my-3 container card glass-effect">
                 <h2 class="card-title">Education Background</h2>
                 <div class="card-body">
                     <p>I was involved in robotics in high school, and admitted to university of California, Irvine as a Mechanical Enginnering major, which I received one year of training in fundamental math and physics. I later learned that for robotics the major I should go to is Electrical Engineering.</p>
@@ -108,7 +108,7 @@
                 </div>
             </section>
 
-            <section id="Projects" class="p-2 my-3 container card glass-effect">
+            <section id="Projects" class="p-5 my-3 container card glass-effect">
                 <h2 class="card-title">Projects</h2>
                 <div class="card-body">
                     <ul>
@@ -132,34 +132,7 @@
             @ Fall 2025 on a beautiful day. Made by Shifeng Hong
         </footer>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const trigger = document.getElementById('eye-research');
-                const target = document.getElementsByClassName("eye-container");
 
-                if (trigger && target) {
-                    trigger.addEventListener('mouseover', () => {
-                        target.classList.add('is-visible');
-                    });
-
-                    trigger.addEventListener('mouseout', () => {
-                        target.classList.remove('is-visible');
-                    });
-                }
-            });
-
-            const img = document.getElementById('album');
-            const music = document.getElementById('music');
-
-            img.addEventListener('mouseenter', () => {
-                // music.currentTime = 0;
-                music.play();
-            })
-
-            //commented out, so touch once and enjoy the music!
-            // img.addEventListener('mouseleave', ()=>{
-            //     music.pause();
-            // })
-        </script>
+    <script src="disco.js"></script>
     </body>
 </html>
