@@ -181,7 +181,7 @@ li#uncertainty-research:hover, li#uncertainty-research a:hover {
 
 
 .avatar-container {
-    width:100px;
+    width: 100px;
     height: 100px;
     border: 1px black dashed;
     border-radius: 50%;
@@ -202,7 +202,7 @@ li#uncertainty-research:hover, li#uncertainty-research a:hover {
 }
 
 .invitation-card-container {
-    display:none;
+    display: none; 
     position:fixed;
     bottom:0;
     right: 0%;
@@ -211,6 +211,8 @@ li#uncertainty-research:hover, li#uncertainty-research a:hover {
     width:300px;
 
     transition: transform 0.4s ease-out;
+    /* initial state */
+    transform: translate(-30%, 85%);
 }
 
 #invitation-card {
@@ -221,7 +223,7 @@ li#uncertainty-research:hover, li#uncertainty-research a:hover {
 }
 
 .invitation-card-container:hover {
-    transform: translateY(120px);
+    transform: translate(30%, -120px);
 }
 
 
