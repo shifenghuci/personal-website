@@ -21,11 +21,13 @@
     </head>
     
     <!--Business card-->
-    <img id="business-card" src="Business card.svg" alt="">
+
+    <a href="./Business card double side.pdf" download><img id="business-card" src="Business card.svg" alt=""></a>
+
 
     <script src="eyetrace.js"></script>
     <body>
-        <p>
+        <p class="d-none">
             <a href="http://validator.w3.org/check?uri=referer">
             W3C validator
             </a>
@@ -99,7 +101,7 @@
                     <p>I was involved in robotics in high school, and admitted to university of California, Irvine as a Mechanical Enginnering major, which I received one year of training in fundamental math and physics. I later learned that for robotics the major I should go to is Electrical Engineering.</p>
                     <p>In my second year, I transferred into <mark>Informatics</mark> major, cultivated with the spirit of <em>Human-center approach of computing</em></p>
                     <p>In my fourth year, I took on <mark>Computer Science</mark> as my double major to add more technicality to my skillset.</p>
-                    <p>Therefore, you might see my chirping the implementaiton detail of potential technology while rambling how it might influence the dynamics in society. This is my thing.</p>
+                    <p>Therefore, you might see me discussing the implementaiton detail of potential technology while rambling how it might influence the dynamics in society. This is my thing.</p>
                     <p>Lastly, two majors I wish to learn more are <ins>Mathematics</ins> and <ins>Cognitive Science</ins></p>
                     <p>Mathematics allows me to understand principle behind technology (especially Computer Graphics!) and in general improved my literacy in reading academic paper</p>
                     <p>Cognitive science help me understand  & others (and how we might build machine that replicate our mind!)</p>
@@ -110,8 +112,8 @@
                 <h2 class="card-title">Projects</h2>
                 <div class="card-body">
                     <ul>
-                        <li id="eye-research" >Optometry research: how does fixation stability change with stimulus size?</li>
-                        <li>Mechanistic Interpretabiltiy research: can LLM report certainty?</li>
+                        <li id="eye-research" >Optometry research: <a href="https://jov.arvojournals.org/"> How does fixation stability change with stimulus size?</a></li>
+                        <li id="uncertainty-research"><a href="https://www.anthropic.com/research/tracing-thoughts-language-model">Mechanistically Interpretability</a> research: can LLM report certainty?</li>
                         <li id="portioning">Informatics research: <a href="https://g.co/gemini/share/ce44c0037ead">Portioning - LLM driven portioning system with University cafeteria</a></li>
                     </ul>
                 </div>
@@ -129,5 +131,22 @@
         <footer class="card-footer text-center">
             @ Fall 2025 on a beautiful day. Made by Shifeng Hong
         </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const trigger = document.getElementById('eye-research');
+                const target = document.getElementsByClassName("eye-container");
+
+                if (trigger && target) {
+                    trigger.addEventListener('mouseover', () => {
+                        target.classList.add('is-visible');
+                    });
+
+                    trigger.addEventListener('mouseout', () => {
+                        target.classList.remove('is-visible');
+                    });
+                }
+            });
+        </script>
     </body>
 </html>

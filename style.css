@@ -69,7 +69,7 @@ div.gallery {
     z-index: 1000;
 }
 
-.object:hover {
+.object:hover:not(#selfie, #ticket) {
     width: 15rem;
     transform:
         translateZ(50px) 
@@ -96,13 +96,6 @@ div.gallery {
     transform: rotate(-20deg);
 }
 
-#selfie {
-    position: absolute;
-    top: 0;
-    left: 60px;
-    transform: rotate(20deg);
-}
-
 
 
 .glass-effect {
@@ -119,14 +112,12 @@ div.gallery {
 }
 
 /* experiment feature */
-
-
-#business-card {
-    display:none;
-    scale: 0.4;
+#selfie {
+    display: none;
     position: absolute;
-    top:0px;
-    left:5px;
+    top: 0;
+    left: 60px;
+    transform: rotate(20deg);
 }
 
 .eye-container {
@@ -166,11 +157,19 @@ div.gallery {
     transition: transform 0.1s linear; /* Smooths the movement */
 }
 
-li#eye-research:hover{
-    cursor:pointer;
+li#eye-research:hover{ 
+    cursor:crosshair;
 }
 
-li#eye-research:hover{
-    cursor:pointer;
+li#uncertainty-research:hover, li#uncertainty-research a:hover {
+    cursor:help;
+}
+
+
+
+#business-card {
+    scale: 0.4;
+    position: fixed;
+    top:0;
 }
 
