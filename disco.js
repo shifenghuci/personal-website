@@ -1,19 +1,3 @@
-
-document.addEventListener('DOMContentLoaded', () => {
-    const trigger = document.getElementById('eye-research');
-    const target = document.getElementsByClassName("eye-container");
-
-    if (trigger && target) {
-        trigger.addEventListener('mouseover', () => {
-            target.classList.add('is-visible');
-        });
-
-        trigger.addEventListener('mouseout', () => {
-            target.classList.remove('is-visible');
-        });
-    }
-});
-
 const img = document.getElementById('album');
 const music = document.getElementById('music');
 img.addEventListener('mouseenter', () => {
