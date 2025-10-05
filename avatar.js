@@ -33,7 +33,7 @@ function changeAvatar() {
     avatar.src = `avatars/${newAvatarName}.png`;
     
     // 3. Get a random delay (e.g., between 1500ms and 4000ms)
-    const delay = getRandomDelay(1500, 4000);
+    const delay = getRandomDelay(2000, 4000);
 
     // 4. Restart the loop after the random delay
     setTimeout(changeAvatar, delay);
