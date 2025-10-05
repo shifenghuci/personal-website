@@ -19,22 +19,42 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
     </head>
+    
+    <!--Business card-->
+    <img id="business-card" src="Business card.svg" alt="">
 
     <body>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer">
+            W3C validator
+            </a>
+        </p>
+
         <!--Logo and Navigation Bar-->
-        <header class="container-fluid">
-            <nav class="navbar nvabar-expand-lg d-flex justify-content-between">
-                <h2 class=".nav-brand">Shifeng Hong</h2>
-                <div class="d-flex">
-                    <a class="nav-item nav-link active" href="#About-Me">About Me</a>
-                    <a class="nav-item nav-link active" href="#Education-Background">Background</a>
-                    <a class="nav-item nav-link active" href="#Projects">Projects</a>
-                </div>
+        <header>
+            <nav id="head-navbar" class="navbar glass-effect">
+                <a class="ps-2 nav-brand" style="text-decoration: none; color: silver; font-size: 25px" href="#">Shifeng Hong</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#About-Me" class="nav-link">#About</a></li>
+                    <li class="nav-item"><a href="#Education-Background" class="nav-link">#Education</a></li>
+                    <li class="nav-item"><a href="#Projects" class="nav-link">#Projects</a></li>
+                </ul>
             </nav>
         </header>
+
         <!--Paragraphs-->
         <main class="container">
-            <section id="About-Me" class="p-2 my-3 container card">
+            <div class="object-frame">
+                    <img id="ticket" class= "shadow-sm object" src="ticket2.svg" alt="">
+            </div>
+
+
+            <div class="object-frame">
+                    <img id="selfie" class= "shadow-sm object" src="hi!.png" alt="">
+            </div>
+
+
+            <section id="About-Me" class="p-2 my-3 container card glass-effect">
                 <h2 class="card-title">About Me</h2>
                 <div class="card-body">
                     <p>I was born in Guangzhou, China. It belongs to a greater area known as "Canton" (“粤” in chinese). I completed my high school and undergrad education in California.</p>
@@ -54,21 +74,28 @@
             <div class="gallery">
                 <div class="object-frame">
                         <img id="album" class="object" src="assets/chelmico album.png" alt="">
+                        <!-- <span class="object-caption">Chelmico's Album "Gokigen"</span> -->
                 </div>
 
                 <div class="object-frame">
                     <img id="book" class="object" src="assets/mucha book.png" alt="">
+                    <!-- <span class="object-caption d-none">Collection of Mucha's drawing</span> -->
                 </div>
 
                 <div class="object-frame">
                     <img id="magazine" class="object" href= "https://popeyemagazine.jp/" src="assets/popeye magazine.png" alt="">
+                    <!-- <span class="object-caption d-none">Issues 896th of POPEYE</span> -->
                 </div>
             </div>
-            
-            <section id="Education-Background" class="p-2 my-3 container card">
+
+            <!-- <div class="object-frame">
+                    <img id="selfie" class= "shadow-sm object" src="vase.png" alt="">
+            </div> -->
+
+            <section id="Education-Background" class="p-2 my-3 container card glass-effect">
                 <h2 class="card-title">Education Background</h2>
                 <div class="card-body">
-                    <p>I was involved in robotics in high school, and admitted to University of California, Irvine as a Mechanical Enginnering major, which I received one year of training in fundamental math and physics. I later learned that for robotics the major I should go to is Electrical Engineering.</p>
+                    <p>I was involved in robotics in high school, and admitted to university of California, Irvine as a Mechanical Enginnering major, which I received one year of training in fundamental math and physics. I later learned that for robotics the major I should go to is Electrical Engineering.</p>
                     <p>In my second year, I transferred into <mark>Informatics</mark> major, cultivated with the spirit of <em>Human-center approach of computing</em></p>
                     <p>In my fourth year, I took on <mark>Computer Science</mark> as my double major to add more technicality to my skillset.</p>
                     <p>Therefore, you might see my chirping the implementaiton detail of potential technology while rambling how it might influence the dynamics in society. This is my thing.</p>
@@ -78,7 +105,7 @@
                 </div>
             </section>
 
-            <section id="Projects" class="p-2 my-3 container card">
+            <section id="Projects" class="p-2 my-3 container card glass-effect">
                 <h2 class="card-title">Projects</h2>
                 <div class="card-body">
                     <ul>
@@ -87,8 +114,8 @@
                         <li id="portioning">Informatics research: <a href="https://g.co/gemini/share/ce44c0037ead">Portioning - LLM driven portioning system with University cafeteria</a></li>
                     </ul>
                 </div>
-                
             </section>
+            <!-- <img id="#painting" src="mucha's work.png" alt="Alphonsa Mucha's drawing"> -->
         </main>
 
         <footer class="card-footer text-center">
