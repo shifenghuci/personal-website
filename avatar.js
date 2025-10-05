@@ -1,5 +1,5 @@
 const avatar = document.getElementById('avatar');
-const allAvatars = ["neutral", "neutral_2", "confident", "amused", "thinking"];
+const allAvatars = ["neutral", "neutral_2", "confident", "sad", "thinking", "upset", "naughty"];
 
 // Function to get a random integer between min and max (inclusive)
 function getRandomDelay(min, max) {
@@ -8,34 +8,28 @@ function getRandomDelay(min, max) {
 }
 
 // Function to select a random avatar from the array
-function getRandomAvatar(currentSrc) {
+function getRandomAvatar() {
     let newAvatar;
     let randomIndex;
-    
-    // Use a do-while loop to ensure the NEW avatar is different from the CURRENT one
-    do {
-        randomIndex = Math.floor(Math.random() * allAvatars.length);
-        newAvatar = allAvatars[randomIndex];
-    } while (currentSrc.includes(newAvatar)); 
-    
+    randomIndex = Math.floor(Math.random() * allAvatars.length);
+    newAvatar = allAvatars[randomIndex];
     return newAvatar;
 }
 
 // The main loop function
 function changeAvatar() {
-    // Get the name of the current avatar from the src attribute
-    const currentSrc = avatar.src;
-    
     // 1. Get a random avatar name that's NOT the current one
-    const newAvatarName = getRandomAvatar(currentSrc);
+    const newAvatarName = getRandomAvatar();
     
     // 2. Set the new image source
-    avatar.src = `avatars/${newAvatarName}.png`;
+    avatar.src = `avatars/${newAvatarName}_blinking.png`;
     
-    // 3. Get a random delay (e.g., between 1500ms and 4000ms)
-    const delay = getRandomDelay(2000, 4000);
+    // 3. Get a random blink delay, shorter than changing emote
+    const blinkDelay = getRandomDelay(150, 200);
+    setTimeout(() => {avatar.src = `avatars/${newAvatarName}.png`;}, blinkDelay);
 
     // 4. Restart the loop after the random delay
+    const delay = getRandomDelay(4000, 6000);
     setTimeout(changeAvatar, delay);
 }
 

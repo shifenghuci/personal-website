@@ -202,6 +202,7 @@ li#uncertainty-research:hover, li#uncertainty-research a:hover {
 }
 
 .invitation-card-container {
+    display:none;
     position:fixed;
     bottom:0;
     right: 0%;
