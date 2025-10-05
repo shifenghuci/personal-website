@@ -11,26 +11,36 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
 - */2 Responsive layout
 - */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
 
-
+Three images with alt attribute
+appropriate heading and pgraph text
+At least one image, with descriptive alt attribute(s)
+Appropriate headings and paragraph text
+Links to external page(s)
+Multiple pages, with appropriate navigation between them
+Semantic HTML tags like aside or footer
+Adding custom icons (I actually draw one myself using figma) from Google Material Icons, Font Awesome, or similar
 
 (b) CSS features
-
+Modifying padding and margins to indent content and enhance readability
+Modifying link, text color, or other colors to be visually appealing
+Adding custom font(s) from Google fonts to add more personality (make sure to include appropriate fallbacks)
 
 
 (c) Advanced features
-
+Leveraging nested selectors to specify format
+Creating a more complex page layout, such as including a sidebar or navigation bar
 
 
 
@@ -39,15 +49,17 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 
 4. How long, in hours, did it take you to complete this assignment?
-
+8hrs
 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
-
+Mostly LLM, query mainly asking about positioning and CSS rules needed to implement a visioned layout
+Boostraps doc: https://getbootstrap.com/docs/4.0/layout/grid/ 
+html tutorial from discussion is used: https://inf133.netlify.app/html-tutorial
 
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
+N/A
 
 
 7. Is there anything special we need to know in order to run your code?

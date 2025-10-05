@@ -1,0 +1,27 @@
+:root {
+  /*
+  * POPEYE 杂志风格配色方案 (City Boy Aesthetics)
+  * 灵感来自杂志封面、主题色调和品牌元素
+  */
+
+  /* 主色调 (Primary Colors) */
+  --popeye-primary-blue: #296084;    /* 经典水手蓝/深蓝，常用于品牌Logo或背景 */
+  --popeye-accent-yellow: #f6c446;   /* 活力黄/鲜亮金，用于重点突出或封面文字 */
+  --popeye-accent-red: #de302c;      /* 醒目红，用于强调或按钮 */
+
+  /* 中性色/背景色 (Neutral/Background Colors) */
+  --popeye-light-tan: #f6cfb9;       /* 浅米色/沙滩色，常用作温暖的背景色 */
+  --popeye-text-dark: #333333;       /* 深灰色，用于主要文本 */
+  --popeye-text-light: #ffffff;      /* 白色，用于背景较深的文本或元素 */
+
+  /* 辅助色 (Secondary/Earth Tones) */
+  --popeye-earth-brown: #a0501d;     /* 大地棕/复古棕，用于复古、严肃或装饰元素 */
+  --popeye-light-grey: #eeeeee;      /* 浅灰，用于边框或分隔线 */
+}
+
+
+body {
+    background-color: var(--popeye-light-tan);
+}
+
+

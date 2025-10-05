@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <!--
+    WRITTEN BY: Shifeng Hong
+    EMAIL: shifengh@uci.edu
+    -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Hi there, I am Shifeng Hong</title>
+        <!--Stylesheets-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Logo and Navigation Bar-->
+        <header class="container-fluid">
+            <nav class="navbar nvabar-expand-lg d-flex justify-content-between">
+                <h2 class=".nav-brand">Shifeng Hong</h2>
+                <div class="d-flex">
+                    <a class="nav-item nav-link active" href="#About-Me">About Me</a>
+                    <a class="nav-item nav-link active" href="#Education-Background">Background</a>
+                    <a class="nav-item nav-link active" href="#Projects">Projects</a>
+                </div>
+            </nav>
+        </header>
+        <!--Paragraphs-->
+        <main class="container">
+            <section id="About-Me" class="p-2 my-3 container card">
+                <h2 class="card-title">About Me</h2>
+                <div class="card-body">
+                    <p>I was born in Guangzhou, China. It belongs to a greater area known as "Canton" (“粤” in chinese). I completed my high school and undergrad education in California.</p>
+                    <p>I first step into gym in the summer after high school education, since then working out becomes an inseparable part of me.</p>
+                    <p>Through out the years, my interst in fitness has extended to <a href="#portioning">nutrient control</a> and experimenting self-care technique in general. I am happy to have conversation on this topic.</p>
+                    <p>The other thing I hold dearestly to my heart is a love of <em>Aesthetic and design</em></p>
+                    <p>I pay attentioned to the placement of object in my room, the color, the layout, and it is a hobby of mine to experiment different layout in regular basis</p>
+                    <p>I also have a fond of appearance and outfit, <em><a href="https://popeyemagazine.jp">POPEYE</a></em> is my favorite magazine</p>
+                    <p>For traditional art, the timeless pieces for me are drawings of <em><a href="https://en.wikipedia.org/wiki/Alphonse_Mucha">Alphonsa Mucha</a></em>, who leads <em><a href="https://en.wikipedia.org/wiki/Art_Nouveau">Art Noveau</a></em> movement</p>
+                    <p><em><a href="https://x.com/gtsleep1200?lang=en">@gtsleep1200</a></em>, is my favorite illustration artist, who posted in occasion on X (formely twitter), you can see some common theme between the illustrations to those of Mucha's </p>
+                    <p>I like Jazz, R&B and anything that has a grain of either element.</p>
+                    <p>My favorite band is <em><a href="https://chelmico.com">Chelmico</a></em>.</p>
+                </div>
+            </section>
+
+            <!--Interactable images-->
+            <div class="gallery">
+                <div class="object-frame">
+                        <img id="album" class="object" src="assets/chelmico album.png" alt="">
+                </div>
+
+                <div class="object-frame">
+                    <img id="book" class="object" src="assets/mucha book.png" alt="">
+                </div>
+
+                <div class="object-frame">
+                    <img id="magazine" class="object" href= "https://popeyemagazine.jp/" src="assets/popeye magazine.png" alt="">
+                </div>
+            </div>
+            
+            <section id="Education-Background" class="p-2 my-3 container card">
+                <h2 class="card-title">Education Background</h2>
+                <div class="card-body">
+                    <p>I was involved in robotics in high school, and admitted to University of California, Irvine as a Mechanical Enginnering major, which I received one year of training in fundamental math and physics. I later learned that for robotics the major I should go to is Electrical Engineering.</p>
+                    <p>In my second year, I transferred into <mark>Informatics</mark> major, cultivated with the spirit of <em>Human-center approach of computing</em></p>
+                    <p>In my fourth year, I took on <mark>Computer Science</mark> as my double major to add more technicality to my skillset.</p>
+                    <p>Therefore, you might see my chirping the implementaiton detail of potential technology while rambling how it might influence the dynamics in society. This is my thing.</p>
+                    <p>Lastly, two majors I wish to learn more are <ins>Mathematics</ins> and <ins>Cognitive Science</ins></p>
+                    <p>Mathematics allows me to understand principle behind technology (especially Computer Graphics!) and in general improved my literacy in reading academic paper</p>
+                    <p>Cognitive science help me understand  & others (and how we might build machine that replicate our mind!)</p>
+                </div>
+            </section>
+
+            <section id="Projects" class="p-2 my-3 container card">
+                <h2 class="card-title">Projects</h2>
+                <div class="card-body">
+                    <ul>
+                        <li>Optometry research: how does fixation stability change with stimulus size?</li>
+                        <li>Mechanistic Interpretabiltiy research: can LLM report certainty?</li>
+                        <li id="portioning">Informatics research: <a href="https://g.co/gemini/share/ce44c0037ead">Portioning - LLM driven portioning system with University cafeteria</a></li>
+                    </ul>
+                </div>
+                
+            </section>
+        </main>
+
+        <footer class="card-footer text-center">
+            @ Fall 2025 on a beautiful day. Made by Shifeng Hong
+        </footer>
+    </body>
+</html>
