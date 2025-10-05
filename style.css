@@ -26,7 +26,8 @@ header { /* Stick to top */
     top:0;
     margin: 20px;
     padding: 5px;
-    z-index: 1000;
+
+    z-index: 100;
 }
 
 header span { /* customized text */
@@ -52,6 +53,7 @@ div.gallery {
 
 .object-frame {
     perspective: 1000px;
+    z-index: 56;
 }
 
 .object {
@@ -66,7 +68,7 @@ div.gallery {
 
     transform-style: preserve-3d;
 
-    z-index: 1000;
+    z-index: 50;
 }
 
 .object:hover:not(#selfie, #ticket) {
@@ -77,9 +79,10 @@ div.gallery {
         rotateY(-10deg)
         scale(1.2);
 
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
 
     cursor: pointer;
+    z-index: 55;
 }
 
 
@@ -106,6 +109,7 @@ div.gallery {
   padding: 20px;
 
   transition: background 0.6s ease-in-out;
+
 }
 
 .object-caption {
