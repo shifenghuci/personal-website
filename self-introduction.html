@@ -24,7 +24,6 @@
 
     <a href="./Business card double side.pdf" download><img id="business-card" src="Business card.svg" alt=""></a>
 
-
     <script src="eyetrace.js"></script>
     <body>
         <p class="d-none">
@@ -76,7 +75,8 @@
             <!--Interactable images-->
             <div class="gallery">
                 <div class="object-frame">
-                        <img id="album" class="object" src="assets/chelmico album.png" alt="">
+                        <img id="album" class="object" src="assets/chelmico album.png" alt="Album of Chelmico band, hover to play sound">
+                        <audio id="music" src="December.mp3" preload="auto"></audio>
                         <!-- <span class="object-caption">Chelmico's Album "Gokigen"</span> -->
                 </div>
 
@@ -147,6 +147,19 @@
                     });
                 }
             });
+
+            const img = document.getElementById('album');
+            const music = document.getElementById('music');
+
+            img.addEventListener('mouseenter', () => {
+                // music.currentTime = 0;
+                music.play();
+            })
+
+            //commented out, so touch once and enjoy the music!
+            // img.addEventListener('mouseleave', ()=>{
+            //     music.pause();
+            // })
         </script>
     </body>
 </html>
