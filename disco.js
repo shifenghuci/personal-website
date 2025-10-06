@@ -65,6 +65,7 @@ function startDiscoMode() {
             const {h,s,l} = getRandomDiscoColor()
             discoText.style.color = `hsl(${h}, ${s}%, ${l}%)`;
             discoGlass.style.background = getRetroComplementaryColor(h,s,l);
+            // discoGlass.style.boxShadow = `0 8px 32px 0 rgba(31, 38, 135, 0.37) TODO: Add disco shadow (light)
         }, 2000); // Adjust this number for speed (lower = faster)
     }
 }

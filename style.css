@@ -50,7 +50,7 @@ footer span { /* footer should be half-transparent with customized text */
 
 div.gallery {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -238,17 +238,30 @@ header li {
 
 #vase {
     position: absolute;
-    top:0;
-    left:0;
+    top: 24%;
+    left: 3%;
     height: 300px;
 }
 
-#brain {
+#wrench {
     position: absolute;
-    bottom:20%;
-    left:50%;
+    bottom:25%;
+    left:65%;
+    height:300px;
+    transform: rotate(-25deg);
 }
 
 #evermoving {
     object-fit: cover;
+}
+
+li.nav-item.glass-effect {
+    padding: 0;
+    margin: 2px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    background: transparent;
+}
+
+li.nav-item a {
+    color:silver;
 }
