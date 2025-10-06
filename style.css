@@ -163,7 +163,7 @@ div.gallery {
     transition: transform 0.1s linear; /* Smooths the movement */
 }
 
-li#eye-research:hover{ 
+li#eye-research:hover, li#eye-research:hover > a{ 
     cursor:crosshair;
 }
 
