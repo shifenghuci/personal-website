@@ -41,9 +41,9 @@ header a {
 
 footer span { /* footer should be half-transparent with customized text */
     font-family: 'Playfair', 'Courier New';
-    font-size: 16px;
-    font-weight: 200;
-    opacity: 50%;
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 25%;
     margin: 20px;
 }
 
@@ -249,3 +249,6 @@ header li {
     left:50%;
 }
 
+#evermoving {
+    object-fit: cover;
+}
