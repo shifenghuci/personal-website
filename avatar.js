@@ -1,5 +1,5 @@
 const avatar = document.getElementById('avatar');
-const allAvatars = ["neutral", "neutral_2", "confident", "sad", "thinking", "upset", "naughty"];
+const allAvatars = ["neutral", "neutral_2", "confident", "sad", "thinking", "upset"];
 
 // Function to get a random integer between min and max (inclusive)
 function getRandomDelay(min, max) {

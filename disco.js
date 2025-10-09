@@ -80,6 +80,6 @@ function stopDiscoMode() {
         // Reset the text color to a default state
         discoText.style.color = 'white';
         discoGlass.style.background = 'rgba(255, 255, 255, 0.15)';
-        document.title = "Hi there, this is Shifeng Hong";
+        document.title = "👋 Hi there, this is Shifeng Hong";
     }
 }

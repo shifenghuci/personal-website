@@ -10,11 +10,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>👋 嗨，我是世峰</title>
+        <link rel="icon" href="assets/images/lucky.svg">
 
         <!--Font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+SC:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
 
         <!--Stylesheets-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -46,11 +47,10 @@
         <!--Logo and Navigation Bar-->
         <header>
             <!--TODO: place gif under glass effect-->
-            <div class="evermovin d-none">
-                <img id="evermoving" src="assets/images/dynamic.gif" alt="a dynamic background for the navigation bar">
-            </div>
+
             <nav id="head-navbar" class="navbar glass-effect">
-                <a id="name" class="ps-2 nav-brand" style="text-decoration: none; color: silver; font-size: 25px" href="#">Shifeng Hong | 洪世峰</a>
+                <img id="evermoving" src="assets/images/dynamic.gif" alt="a dynamic background for the navigation bar">
+                <a id="name" class="ps-2 nav-brand" href="#">Shifeng Hong | 洪世峰</a>
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="#About-Me" class="nav-link">About</a></li>
                     <div class="vr"></div>
@@ -109,7 +109,7 @@
                 <h2 class="card-title">Education Background</h2>
                 <div class="card-body">
                     <p>I was involved in robotics in high school, and admitted to university of California, Irvine as a Mechanical Enginnering major, which I received one year of training in fundamental math and physics. I later learned that for robotics the major I should go to is Electrical Engineering.</p>
-                    <p>In my second year, I transferred into <mark>Informatics</mark> major, cultivated with the spirit of <em>Human-center approach of computing</em></p>
+                    <p>In my second year, I transferred into <a id="#informatics" href="https://luddy.indianapolis.iu.edu/what-is-informatics/index.html"><mark>Informatics</mark></a> major, cultivated with the spirit of <em>Human-center approach of computing</em></p>
                     <p>In my fourth year, I took on <mark>Computer Science</mark> as my double major to add more technicality to my skillset.</p>
                     <p>Therefore, you might see me discussing the implementaiton detail of potential technology while rambling how it might influence the dynamics in society. This is my thing.</p>
                     <p>Lastly, two majors I wish to learn more are <ins>Mathematics</ins> and <ins>Cognitive Science</ins></p>
@@ -140,9 +140,22 @@
 
         <a href="mailto:sfHong512@gmail.com"><img id="invitation-card" src="assets/images/Invitation card.svg" alt="Invitation card"></a>
 
+        <audio id="projector" src="assets/audios/projector.mp3" preload="auto"></audio>
+
     <!--Scripts-->
     <script src="disco.js"></script>
     <script src="avatar.js"></script>
     <script src="eyetrace.js"></script>
+    <script>
+        const navbar = document.getElementById('head-navbar');
+        const projector = document.getElementById('projector');
+        navbar.addEventListener('mouseenter', () => {
+            projector.play();
+        });
+
+        navbar.addEventListener('mouseleave', ()=>{
+            projector.pause();
+        });
+    </script>
     </body>
 </html>
