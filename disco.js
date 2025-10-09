@@ -4,13 +4,13 @@ img.addEventListener('mouseenter', () => {
     // music.currentTime = 0;
     music.play();
 
-    startDiscoMode();
+    // startDiscoMode();
 })
 
 //commented out, so touch once and enjoy the music!
 img.addEventListener('mouseleave', ()=>{
     music.pause();
-    stopDiscoMode()
+    // stopDiscoMode()
 })
 
 const discoText = document.getElementById('name');
