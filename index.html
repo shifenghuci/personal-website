@@ -185,13 +185,12 @@
             intervalId = setInterval(() => {
             currentImageIndex = (currentImageIndex + 1) % imageSources.length;
             myImage.src = imageSources[currentImageIndex];
-            }, 600); // Change image every 500ms
+            }, 1800); // Change image every 500ms
         }
 
         function stopImageCycle() {
             clearInterval(intervalId);
             // Optional: reset to the initial image
-            currentImageIndex = 0;
         }
 
         navbar.addEventListener('mouseenter', startImageCycle);
