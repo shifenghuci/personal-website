@@ -207,31 +207,6 @@ li#uncertainty-research:hover, li#uncertainty-research a:hover {
     object-fit: cover;
 }
 
-.invitation-card-container {
-    display: none; 
-    position:fixed;
-    bottom:0;
-    right: 0%;
-    z-index:1000;
-
-    width:300px;
-
-    transition: transform 0.4s ease-out;
-    /* initial state */
-    transform: translate(-30%, 85%);
-}
-
-#invitation-card {
-    width: 100%;
-    height:150px;
-    display: block;
-    
-}
-
-.invitation-card-container:hover {
-    transform: translate(30%, -120px);
-}
-
 header li { 
     font-size: 18px;
 }
@@ -264,4 +239,23 @@ li.nav-item.glass-effect {
 
 li.nav-item a {
     color:silver;
+}
+
+#invitation-card {
+    position:fixed;
+    bottom:0%;
+    left: 27.5%;
+    z-index: 10000;
+
+    transform: translateY(150px);
+
+
+}
+
+
+#invitation-card:hover {
+    cursor: pointer;
+
+    transition: transform 1.25s ease-in-out;
+    transform: translateY(-25px);
 }
