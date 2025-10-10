@@ -303,3 +303,8 @@ li.nav-item a {
     transition: transform  0.65s ease-in-out;
     border: rgba(192, 192, 192, 0.75) solid 2px;
 } */
+
+
+#eye-research, #uncertainty-research, #portioning {
+    line-height: 60px;
+}
