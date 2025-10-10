@@ -44,6 +44,10 @@ Audio effect when interacting with certain elements.
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
+Yes.
+1. Element div not allowed as child of element ul in this context. (Suppressing further errors from this subtree.)
+    This is ignored because I use the vertical ruler class to decorate my navigation bar.
+2. 
 
 
 4. How long, in hours, did it take you to complete this assignment?
