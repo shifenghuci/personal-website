@@ -10,7 +10,7 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
+10/10
 - 1/1 Readme
 - 2/2 Basic HTML content
 - 1/1 Basic CSS styling
@@ -23,24 +23,22 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 (a) Basic features
 
-Three images with alt attribute
-appropriate heading and pgraph text
-At least one image, with descriptive alt attribute(s)
+All images with descriptive alt attribute
 Appropriate headings and paragraph text
-Links to external page(s)
-Multiple pages, with appropriate navigation between them
-Semantic HTML tags like aside or footer
-Adding custom icons (I actually draw one myself using figma) from Google Material Icons, Font Awesome, or similar
+Semantic HTML tags like header or footer
+Custom icon and favicon of the website, created myself through Figma.
 
 (b) CSS features
-Modifying padding and margins to indent content and enhance readability
-Modifying link, text color, or other colors to be visually appealing
+Modify padding and margins to indent content and enhance readability
+Modify link, text color, or other colors to be visually appealing
 Adding custom font(s) from Google fonts to add more personality (make sure to include appropriate fallbacks)
 
 
 (c) Advanced features
 Leveraging nested selectors to specify format
 Creating a more complex page layout, such as including a sidebar or navigation bar
+Floating animation when hovered over images. 
+Audio effect when interacting with certain elements.
 
 
 
@@ -49,11 +47,13 @@ Creating a more complex page layout, such as including a sidebar or navigation b
 
 
 4. How long, in hours, did it take you to complete this assignment?
-8hrs
+
+18 hrs
 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
-Mostly LLM, query mainly asking about positioning and CSS rules needed to implement a visioned layout
+
+Mostly LLM, query mainly asking about positioning and CSS rules needed to implement a visioned layout. In addition, most interactive feature is created prior to the javascript lecture, so I queried on how to achieve certain interaction effect.
 Boostraps doc: https://getbootstrap.com/docs/4.0/layout/grid/ 
 html tutorial from discussion is used: https://inf133.netlify.app/html-tutorial
 
@@ -64,3 +64,6 @@ N/A
 
 7. Is there anything special we need to know in order to run your code?
 
+Yes, I spent sometimes developing not-obvious interaction. It will be a shame that the viewer never get the chance to explore them.
+
+Hint: try to hover over images, as well as the navigation bar on top.
