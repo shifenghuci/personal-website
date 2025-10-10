@@ -88,6 +88,7 @@ div.gallery {
     position:relative;
     background-color: transparent;
     color: white;
+    /* transition: transform  0.5s ease-in-out; */
 }
 
 #ticket {
@@ -265,7 +266,7 @@ li.nav-item a {
 #head-navbar{
     position: relative;
     overflow: hidden;
-
+    cursor:text;
 }
 
 #head-navbar > * {
@@ -295,3 +296,10 @@ li.nav-item a {
 .eye-container{
     display: none;
 }
+
+/* #About-Me:hover, #Education-Background:hover, #Projects:hover  {
+    cursor: pointer;
+    transform: translateY(-15px) translateZ(15px);
+    transition: transform  0.65s ease-in-out;
+    border: rgba(192, 192, 192, 0.75) solid 2px;
+} */
