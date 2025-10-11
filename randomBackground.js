@@ -40,6 +40,7 @@ function startImageCycle() {
 function stopImageCycle() {
     clearInterval(intervalId);
         // Optional: reset to the initial image
+        myImage.src = "random/blank.png"
     }
 
     navbar.addEventListener('mouseenter', startImageCycle);

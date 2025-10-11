@@ -71,7 +71,7 @@ div.gallery {
     z-index: 50;
 }
 
-.object:hover:not(#ticket) {
+.object:hover{
     width: 15rem;
     transform:
         translateZ(50px) 
@@ -86,7 +86,7 @@ div.gallery {
 }
 
 
-#About-Me, #Education-Background, #Projects{
+#About-Me, #Education-Background, #Projects, #What-if{
     position:relative;
     background-color: transparent;
     color: white;
@@ -99,7 +99,7 @@ div.gallery {
     right: 0;
     width: 20rem;
     transform: rotate(-20deg);
-    z-index: 2;
+    z-index: 0;
 }
 
 
@@ -203,10 +203,10 @@ header li {
 
 #vase {
     position: absolute;
-    top: 22%;
+    top: 16%;
     left: 3%;
     height: 20rem;
-    z-index: 2;
+    z-index: 0;
 }
 
 #wrench {
