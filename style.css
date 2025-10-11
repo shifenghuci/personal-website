@@ -99,6 +99,7 @@ div.gallery {
     right: 0;
     width: 20rem;
     transform: rotate(-20deg);
+    z-index: 2;
 }
 
 
@@ -202,9 +203,10 @@ header li {
 
 #vase {
     position: absolute;
-    top: 24%;
+    top: 22%;
     left: 3%;
-    height: 300px;
+    height: 20rem;
+    z-index: 2;
 }
 
 #wrench {
