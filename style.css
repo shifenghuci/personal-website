@@ -45,8 +45,10 @@ footer span { /* footer should be half-transparent with customized text */
 
 div.gallery {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .object-frame {
@@ -93,9 +95,9 @@ div.gallery {
 
 #ticket {
     position: absolute;
-    right: -68px;
-    top: 100px;
-    width: 15rem;
+    top: 15%;
+    right: 0;
+    width: 20rem;
     transform: rotate(-20deg);
 }
 
