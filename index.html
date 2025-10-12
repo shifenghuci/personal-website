@@ -182,9 +182,9 @@
                 </div>
             </section>
 
-            <section id="Belief" class="p-5 my-3 container card glass-effect">
+            <section id="Belief" class="p-5 my-3 container card glass-effect scanlines jpg">
                 <h2 class="card-title">*current* belief</h2>
-                <ul>
+                <ul id="list-of-belief">
                     <li>One ought to focus on very selected few of things every day.</li>
                     <li>One should pay attention to his appearance, as that's usually the foundation of trust among strangers.</li>
                     <li>Fews can achieve great things along, communication is a must-learn skill.</li>
@@ -213,5 +213,19 @@
     <script src="avatar.js"></script>
     <script src="eyetrace.js"></script>
     <script src="randomBackground.js"></script>
+    <script>
+        const belief = document.getElementById('Belief');
+        setTimeout(function() {
+            // effect disappear
+            belief.classList.remove('jpg');
+            belief.classList.remove('scanlines');
+
+            const title = document.querySelector('#Belief h2.card-title');
+            title.textContent = "Belief";
+
+            // const list_of_belief = document.querySelectorAll('#list-of-belief li');
+            // list_of_belief.style.display = 'block';
+        }, 5000);
+    </script>
     </body>
 </html>
